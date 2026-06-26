@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bloc3_app'
+    'bloc3_app',
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [
