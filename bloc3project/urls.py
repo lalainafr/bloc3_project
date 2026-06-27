@@ -19,9 +19,9 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from . import settings
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('product/', include ('bloc3_app.urls')),
+    path('', include ('landing.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # static file implementation

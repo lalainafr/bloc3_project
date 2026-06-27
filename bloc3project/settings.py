@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bloc3_app',
+    'landing',
     'widget_tweaks'
 ]
 
