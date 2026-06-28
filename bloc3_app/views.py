@@ -4,10 +4,13 @@ from django.shortcuts import render, redirect
 from bloc3_app.models import Product
 from .form import ProductForm
 
+
 def home(request):
     products = Product.objects.all()
     context = {'products': products}
     return render(request, 'bloc3_app/index.html', context )
+
+
 
 def product_details(request, pk):
     product = Product.objects.get(pk=pk)
