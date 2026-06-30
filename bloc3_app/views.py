@@ -5,10 +5,10 @@ from bloc3_app.models import Product
 from .form import ProductForm
 
 
-def home(request):
+def product(request):
     products = Product.objects.all()
     context = {'products': products}
-    return render(request, 'bloc3_app/index.html', context )
+    return render(request, 'bloc3_app/product.html', context )
 
 
 
